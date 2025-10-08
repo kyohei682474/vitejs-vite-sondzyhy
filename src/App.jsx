@@ -2,7 +2,8 @@ import './App.css';
 import { PrimaryButton } from './components/atoms/buttons/PrimaryButton';
 import { SecondaryButton } from './components/atoms/buttons/SecondaryButton';
 import { SearchInput } from './components/molecules/SearchInput';
-import { UserCard } from './components/organisms/user/UserCard'
+import { UserCard } from './components/organisms/user/UserCard';
+import { HeaderOnly } from './components/template/HeaderOnly';
 function App() {
   const user = {
     name: "こうへい",
@@ -17,13 +18,12 @@ function App() {
 
   return (
     <>
-      <div>
+      <HeaderOnly>
         <PrimaryButton>テスト</PrimaryButton>
         <SecondaryButton>テスト</SecondaryButton>
         <SearchInput />
         <UserCard user={user} />
-        
-      </div>
+      </HeaderOnly>
     </>
   );
 }
