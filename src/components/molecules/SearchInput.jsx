@@ -8,7 +8,7 @@ export const SearchInput = () => {
       <Input placeholder="検索してください" />
       <SButtonWrapper>
          <PrimaryButton>検索</PrimaryButton>
-      </ SButtonWrapper>
+      </SButtonWrapper>
     </SContainer>
   );
 };

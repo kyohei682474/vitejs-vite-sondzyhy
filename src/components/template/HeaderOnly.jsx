@@ -1,8 +1,10 @@
+import { Header } from "../atoms/layout/Header";
+
 export const HeaderOnly = (props) => {  
   const { children } = props;
 return (
   <> 
-  <div style={{ height: "50", backgroundColor: "red" }} >ヘッダー</div>
+ <Header /> 
   {children}
    </>
 
